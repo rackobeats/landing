@@ -3,6 +3,7 @@
 body {
 	background-image: url('images/thunder.jpg');
 	background-size: cover;
+	background-attachment: fixed;
 	font-family: 'Courier Prime', monospace;
   color: rgb(220,220,220);
   font-size: 18px;

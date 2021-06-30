@@ -15,36 +15,6 @@ h1 {
 	margin-bottom: 0px;
 }
 
-
-/*
-a {
-  color: rgb(59,191,255);
-  font-weight: bold;
-  text-decoration: none;
-  transition: .3s;
-}
-
-a:hover {
-  color: rgba(255,0,0,1);
-}
-
-.button-blue {
-	background-color: rgb(59,191,255);
-	color: white;
-	padding: 16px 28px;
-	border-radius: 4px;
-	display: inline-block;
-	text-decoration: none;
-	transition: .5s;
-}
-
-.button-blue:hover {
-	background-color: rgb(59,191,255);
-	color: rgb(255,0,0);
-}
-
-*/
-
 .container {
 	width: auto;
 	margin: auto;
@@ -73,6 +43,14 @@ a:hover {
 	transition: 0.3s;
 }
 
+.fa.fa-youtube-play {
+	transition: color 0.3s ease;
+}
+
+.fa.fa-instagram {
+	transition: color 0.3s ease;
+}
+
 .card-white {
 	background-color: rgba(59,191,255,0.2);
 	box-shadow: 0 0 32px rgba(50,50,50,0.6);
@@ -90,7 +68,6 @@ a:hover {
 	border-radius: 4px;
 }
 
-
 .footer {
 	text-align: center;
 	margin-bottom: 40px;
@@ -100,16 +77,17 @@ a:hover {
 	text-shadow: 0px 0px 8px rgba(59,191,255,0.5);
 }
 
-
 .cards {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: auto;
 	grid-gap: 16px;
 	align-items: center;
 	justify-content: center;
 }
 
 .scroll {
+	position: relative;
+	overflow: auto;
 	margin-top: 48px;
 	font-weight: bold;
 	font-size: 24px;
@@ -118,11 +96,11 @@ a:hover {
 
 .scroll p {
 	display: inline;
- position: fixed;
- width: 250%;
- height: 8%;
- text-align: center;
- white-space: nowrap;
+ 	position: fixed;
+ 	width: 250%;
+ 	height: 8%;
+ 	text-align: center;
+ 	white-space: nowrap;
  /* Starting position */
  -moz-transform:translateX(100%);
  -webkit-transform:translateX(100%);	
@@ -155,15 +133,13 @@ a:hover {
  }
 }
 
-
-
-
-
+/*
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 /* Cards media queries */
-@media (max-width: 800px) {
+@media (min-width: 1400px) {
 	.cards {
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 
 	.card-white {
@@ -183,24 +159,3 @@ a:hover {
 		width: 600px;
 	}
 }
-
-@media (min-width: 1000px) {
-	.container {
-		width: 800px;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
